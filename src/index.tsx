@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+// Interfaces with props
 interface AppProps {
     // Optional property
     color?: string
