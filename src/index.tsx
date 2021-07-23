@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 interface AppProps {
-    // optional property
+    // Optional property
     color?: string
 }
 
