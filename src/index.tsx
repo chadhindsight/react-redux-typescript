@@ -27,5 +27,5 @@ class App extends Component<AppProps> {
         );
     }
 }
-// Here
+
 ReactDOM.render(<App color="red" />, document.getElementById('root'));
