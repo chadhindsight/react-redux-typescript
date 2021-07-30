@@ -1,32 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, applyMiddleware } from 'redux'
 
-// Interfaces with props
-interface AppProps {
-    // Optional property
-    color?: string
-}
-// NB: When using a class component in React wit Typescript you can pass in two generics: One for props, and one for state.
-class App extends Component<AppProps> {
-    // If you do state this way, you overwrite state in the component class
-    state = { counter: 0 }
-
-    onIncrement = (): void => {
-        this.setState({ counter: this.state.counter + 1 })
-    }
-
-    onDecrement = () => {
-        this.setState({ counter: this.state.counter - 1 })
-    }
-    render() {
-        return (
-            <div>
-                <button onClick={this.onIncrement}>Increment</button>
-                <button onClick={this.onDecrement}>Decrement</button>
-                {this.state.counter}
-            </div>
-        );
-    }
-}
 
 ReactDOM.render(<App color="red" />, document.getElementById('root'));
+// NB: When using a class component in React wit Typescript you can pass in two generics: One for props, and one for state.
+    // If you do state this way, you overwrite state in the React.Component class
