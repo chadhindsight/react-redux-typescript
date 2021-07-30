@@ -8,6 +8,7 @@ interface AppProps {
 }
 // NB: When using a class component in React wit Typescript you can pass in two generics: One for props, and one for state.
 class App extends Component<AppProps> {
+    // If you do state this way, you overwrite state in the component class
     state = { counter: 0 }
 
     onIncrement = (): void => {
