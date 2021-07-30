@@ -6,7 +6,7 @@ interface AppProps {
     // Optional property
     color?: string
 }
-
+// NB: When using a class component in React wit Typescript you can pass in two generics: One for props, and one for state.
 class App extends Component<AppProps> {
     state = { counter: 0 }
 
