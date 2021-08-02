@@ -8,6 +8,7 @@ interface Todo {
     completed: boolean
 }
 
+//An interface that describes the arguments to be passed into dispatch()
 interface FetchTodosAction {
     type: ActionTypes.fetchTodos;
     payload: Todo[]
